@@ -1,121 +1,128 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d0e6ff;
 }
 
-/* Container principal */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.top-buttons {
+  background: #002878;
+  padding: 10px;
+  text-align: right;
 }
 
-/* Cabeçalho */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #003366;
-    padding: 20px;
-    color: #fff;
+.top-buttons button {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-header .logo img {
-    height: 50px;
+.header {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Fachada_UFPR.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
-header nav ul {
-    display: flex;
-    list-style: none;
+.logo {
+  height: 80px;
+  margin-right: 30px;
 }
 
-header nav ul li {
-    margin: 0 10px;
+.title h1 {
+  margin: 0;
+  font-size: 28px;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.title p {
+  margin-top: 5px;
 }
 
-/* Seção de introdução */
 .intro {
-    text-align: center;
-    margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #b8d5f7;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
-.intro h1 {
-    font-size: 36px;
-    color: #003366;
+.intro-text {
+  width: 60%;
 }
 
-.intro p {
-    font-size: 18px;
-    margin: 20px 0;
+.intro-text h2 {
+  color: #002878;
 }
 
-.button {
-    background-color: #003366;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+.intro-text p {
+  margin: 15px 0;
 }
 
-.button:hover {
-    background-color: #005bb5;
+.intro-text button {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* Cards de informações */
+.intro-img {
+  width: 35%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .cards {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 20px;
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background-color: #2b6ebf;
+  color: white;
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .card img {
-    width: 80px;
-    height: auto;
-    margin-bottom: 20px;
+  width: 60px;
+  margin-bottom: 10px;
 }
 
-.card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.card button {
+  background-color: white;
+  color: #2b6ebf;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.card p {
-    font-size: 16px;
-    margin-bottom: 20px;
+.bottom-button {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 50px;
-}
-
-footer .button {
-    font-size: 20px;
+.bottom-button button {
+  background-color: white;
+  color: #002878;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
 }
